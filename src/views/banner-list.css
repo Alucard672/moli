@@ -1,0 +1,23 @@
+.banner-list {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+  padding: 24px 32px;
+}
+.header-bar {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 18px;
+  align-items: center;
+}
+.banner-table {
+  margin-bottom: 18px;
+}
+.banner-img {
+  width: 60px;
+  height: 32px;
+  border-radius: 6px;
+  object-fit: cover;
+  background: #f5f6fa;
+  border: 1px solid #eee;
+} 

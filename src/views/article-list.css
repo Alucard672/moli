@@ -1,0 +1,316 @@
+.article-list {
+  padding: 20px;
+  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+  min-height: calc(100vh - 120px);
+  box-sizing: border-box;
+}
+
+.header-bar {
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(10px);
+  border-radius: 12px;
+  padding: 16px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 20px rgba(31, 38, 135, 0.1);
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.search-input {
+  flex: 1;
+  min-width: 180px;
+}
+
+.search-input .el-input__wrapper {
+  border-radius: 8px;
+  border: 1px solid #e1e5e9;
+  transition: all 0.3s ease;
+}
+
+.search-input .el-input__wrapper:hover {
+  border-color: #409eff;
+  box-shadow: 0 0 0 2px rgba(64, 158, 255, 0.1);
+}
+
+.search-input .el-input__wrapper.is-focus {
+  border-color: #409eff;
+  box-shadow: 0 0 0 2px rgba(64, 158, 255, 0.2);
+}
+
+.article-table {
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(10px);
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(31, 38, 135, 0.1);
+  border: none;
+}
+
+.article-table .el-table__header {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+
+.article-table .el-table__header th {
+  background: transparent;
+  color: white;
+  font-weight: 600;
+  border: none;
+  padding: 12px 8px;
+}
+
+.article-table .el-table__body tr {
+  transition: all 0.3s ease;
+}
+
+.article-table .el-table__body tr:hover {
+  background: rgba(64, 158, 255, 0.05);
+  transform: translateY(-1px);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.article-table .el-table__body td {
+  padding: 12px 8px;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.pagination-bar {
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(10px);
+  border-radius: 12px;
+  padding: 16px;
+  margin-top: 20px;
+  box-shadow: 0 4px 20px rgba(31, 38, 135, 0.1);
+  display: flex;
+  justify-content: center;
+}
+
+.el-dialog {
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.el-dialog .el-dialog__header {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  padding: 16px 20px;
+}
+
+.el-dialog .el-dialog__title {
+  color: white;
+  font-weight: 600;
+}
+
+.el-dialog .el-dialog__body {
+  padding: 20px;
+}
+
+.el-dialog .el-dialog__footer {
+  padding: 12px 20px;
+  border-top: 1px solid #f0f0f0;
+  background: #fafafa;
+}
+
+.el-form-item__label {
+  font-weight: 600;
+  color: #333;
+}
+
+.el-input__wrapper,
+.el-textarea__inner,
+.el-select .el-input__wrapper {
+  border-radius: 8px;
+  border: 1px solid #e1e5e9;
+  transition: all 0.3s ease;
+}
+
+.el-input__wrapper:hover,
+.el-textarea__inner:hover,
+.el-select .el-input__wrapper:hover {
+  border-color: #409eff;
+  box-shadow: 0 0 0 2px rgba(64, 158, 255, 0.1);
+}
+
+.el-input__wrapper.is-focus,
+.el-textarea__inner:focus,
+.el-select .el-input__wrapper.is-focus {
+  border-color: #409eff;
+  box-shadow: 0 0 0 2px rgba(64, 158, 255, 0.2);
+}
+
+.el-button {
+  border-radius: 8px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  border: none;
+  padding: 10px 20px;
+}
+
+.el-button--primary {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  box-shadow: 0 2px 10px rgba(102, 126, 234, 0.3);
+}
+
+.el-button--primary:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 4px 15px rgba(102, 126, 234, 0.4);
+}
+
+.el-button--success {
+  background: linear-gradient(135deg, #56ab2f 0%, #a8e6cf 100%);
+  box-shadow: 0 2px 10px rgba(86, 171, 47, 0.3);
+}
+
+.el-button--success:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 4px 15px rgba(86, 171, 47, 0.4);
+}
+
+.el-button--danger {
+  background: linear-gradient(135deg, #ff6b6b 0%, #ee5a52 100%);
+  box-shadow: 0 2px 10px rgba(255, 107, 107, 0.3);
+}
+
+.el-button--danger:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 4px 15px rgba(255, 107, 107, 0.4);
+}
+
+.el-button--small {
+  padding: 6px 12px;
+  font-size: 12px;
+}
+
+.el-pagination {
+  --el-pagination-bg-color: transparent;
+  --el-pagination-text-color: #666;
+  --el-pagination-border-radius: 6px;
+  --el-pagination-button-color: #666;
+  --el-pagination-button-bg-color: #f5f5f5;
+  --el-pagination-button-disabled-color: #c0c4cc;
+  --el-pagination-button-disabled-bg-color: #f5f5f5;
+  --el-pagination-hover-color: #409eff;
+}
+
+.el-pagination .el-pager li {
+  border-radius: 6px;
+  margin: 0 2px;
+  transition: all 0.3s ease;
+}
+
+.el-pagination .el-pager li:hover {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  transform: translateY(-1px);
+}
+
+.el-pagination .el-pager li.is-active {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  box-shadow: 0 2px 6px rgba(102, 126, 234, 0.3);
+}
+
+/* 响应式布局 */
+@media (max-width: 768px) {
+  .article-list {
+    padding: 16px;
+  }
+  
+  .header-bar {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 10px;
+  }
+  
+  .search-input {
+    min-width: auto;
+  }
+  
+  .article-table .el-table__header th,
+  .article-table .el-table__body td {
+    padding: 10px 6px;
+    font-size: 14px;
+  }
+  
+  .article-table .el-table__body td:last-child {
+    padding: 6px;
+  }
+  
+  .el-button--small {
+    padding: 4px 8px;
+    font-size: 11px;
+  }
+  
+  .pagination-bar {
+    padding: 12px;
+  }
+  
+  .el-dialog {
+    width: 90% !important;
+    margin: 5vh auto;
+  }
+}
+
+@media (max-width: 480px) {
+  .article-list {
+    padding: 12px;
+  }
+  
+  .header-bar {
+    padding: 12px;
+  }
+  
+  .article-table .el-table__header th,
+  .article-table .el-table__body td {
+    padding: 8px 4px;
+    font-size: 12px;
+  }
+  
+  .el-button {
+    padding: 8px 16px;
+    font-size: 12px;
+  }
+  
+  .el-dialog .el-dialog__body {
+    padding: 16px;
+  }
+  
+  .el-form-item__label {
+    font-size: 14px;
+  }
+}
+
+/* 动画效果 */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.article-list {
+  animation: fadeInUp 0.5s ease-out;
+}
+
+.header-bar,
+.article-table,
+.pagination-bar {
+  animation: fadeInUp 0.5s ease-out;
+}
+
+.header-bar {
+  animation-delay: 0.1s;
+}
+
+.article-table {
+  animation-delay: 0.2s;
+}
+
+.pagination-bar {
+  animation-delay: 0.3s;
+} 
